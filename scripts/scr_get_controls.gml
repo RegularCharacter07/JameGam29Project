@@ -1,0 +1,9 @@
+down = keyboard_check(vk_down);
+up = keyboard_check(vk_up);
+right = keyboard_check(vk_right);
+left = keyboard_check(vk_left);
+a = keyboard_check(ord("X"));
+b = keyboard_check(ord("Z"));
+start = keyboard_check_pressed(vk_enter);
+downpressed = keyboard_check_pressed(vk_down);
+uppressed = keyboard_check_pressed(vk_up);

@@ -9,16 +9,47 @@
     <sound>sound\mus_game</sound>
   </sounds>
   <sprites name="sprites">
+    <sprites name="derp">
+      <sprite>sprites\spr_derp_parachute</sprite>
+      <sprite>sprites\spr_derp_dead</sprite>
+      <sprite>sprites\spr_derp_fall</sprite>
+      <sprite>sprites\spr_derp_fart</sprite>
+      <sprite>sprites\spr_derp_idle</sprite>
+    </sprites>
+    <sprites name="items">
+      <sprite>sprites\spr_bean</sprite>
+      <sprite>sprites\spr_parachute</sprite>
+    </sprites>
+    <sprite>sprites\spr_play</sprite>
     <sprite>sprites\spr_logo</sprite>
+    <sprite>sprites\spr_block</sprite>
+    <sprite>sprites\spr_ready</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bg_clouds</background>
+    <background>background\bg_noclouds</background>
+  </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_get_controls.gml</script>
+  </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_normal</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_logo</object>
     <object>objects\obj_music</object>
+    <object>objects\obj_menu</object>
+    <object>objects\obj_derp</object>
+    <object>objects\obj_points</object>
+    <object>objects\obj_block</object>
+    <object>objects\obj_ready</object>
+    <object>objects\obj_bean</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_logo</room>
+    <room>rooms\rm_menu</room>
+    <room>rooms\rm_play</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
