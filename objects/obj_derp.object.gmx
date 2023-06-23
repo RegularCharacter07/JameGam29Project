@@ -28,6 +28,33 @@
             <string>derpspeed = 4;
 fallspeed = 4;
 farting = false;
+parachute = false;
+pointscollected = 300;
+fallspeeddata = 4;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>parachute = false;
+sprite_index = spr_derp_fall;
 </string>
           </argument>
         </arguments>
@@ -74,7 +101,8 @@ sprite_index = spr_derp_fall;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr_get_controls()
+            <string>scr_get_controls();
+
 if farting = false
 { 
     y += fallspeed;
@@ -89,6 +117,27 @@ else
         obj_points.y -= fallspeed;
     }
 }
+
+if parachute = true
+{
+    fallspeed = 2;
+    sprite_index = spr_derp_parachute;
+}
+else
+{
+    fallspeed = fallspeeddata;
+}
+
+if parachute = false
+{
+    if obj_points.points = pointscollected
+    {
+        pointscollected += 300;
+        fallspeed += 1;
+        fallspeeddata += 1;
+    }
+}
+
 
 if !position_meeting(x-derpspeed,y,obj_block)
 {
@@ -131,6 +180,53 @@ if !position_meeting(x+derpspeed,y,obj_block)
             <kind>1</kind>
             <string>farting = true;
 alarm[0] = 60;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_parachute">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>parachute = true;
+alarm[1] = 60;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_grass">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>room_goto(rm_gameover);
 </string>
           </argument>
         </arguments>

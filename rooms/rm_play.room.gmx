@@ -2,7 +2,7 @@
 <room>
   <caption></caption>
   <width>320</width>
-  <height>9600</height>
+  <height>4800</height>
   <vsnap>8</vsnap>
   <hsnap>8</hsnap>
   <isometric>0</isometric>
@@ -51,12 +51,41 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_derp" x="144" y="80" name="inst_23B3B622" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_block" x="-48" y="0" name="inst_98FAC1AE" locked="0" code="" scaleX="1" scaleY="300" colour="4294967295" rotation="0"/>
-    <instance objName="obj_block" x="304" y="0" name="inst_1195D6D2" locked="0" code="" scaleX="1" scaleY="300" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ready" x="72" y="112" name="inst_A8780B32" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_points" x="144" y="56" name="inst_934A9AC9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_block" x="-48" y="-32" name="inst_C08D4B23" locked="0" code="" scaleX="12.1290321350098" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_block" x="-48" y="0" name="inst_8B16EDE2" locked="0" code="" scaleX="1" scaleY="150" colour="4294967295" rotation="0"/>
+    <instance objName="obj_block" x="312" y="0" name="inst_E3A8F36E" locked="0" code="" scaleX="1" scaleY="150" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ready" x="72" y="112" name="inst_A8780B32" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_points" x="144" y="40" name="inst_934A9AC9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_derp" x="144" y="64" name="inst_23B3B622" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_grass" x="-16" y="4736" name="inst_4EA4FA9F" locked="0" code="" scaleX="10.75" scaleY="2.06451606750488" colour="4294967295" rotation="0"/>
+    <instance objName="obj_parachute_spawner" x="8" y="256" name="inst_C1F170FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bean_spawner" x="56" y="256" name="inst_15731FA3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_parachute_spawner" x="104" y="256" name="inst_694916E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bean_spawner" x="152" y="256" name="inst_B0F05A76" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_parachute_spawner" x="200" y="256" name="inst_395F213C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bean_spawner" x="248" y="256" name="inst_C64475CD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_parachute_spawner" x="296" y="256" name="inst_CA286DFB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bean_spawner" x="8" y="512" name="inst_271AF7B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bean_spawner" x="104" y="512" name="inst_D61A6025" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bean_spawner" x="200" y="512" name="inst_4D797935" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bean_spawner" x="296" y="512" name="inst_13D3F218" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_parachute_spawner" x="152" y="512" name="inst_4B9F62C1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_parachute_spawner" x="248" y="512" name="inst_54948D38" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_parachute_spawner" x="56" y="512" name="inst_4FD8A464" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_parachute_spawner" x="8" y="768" name="inst_8B463736" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_parachute_spawner" x="104" y="768" name="inst_C2AE7759" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_parachute_spawner" x="200" y="768" name="inst_472FA96D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_parachute_spawner" x="296" y="768" name="inst_41F9E1C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bean_spawner" x="248" y="768" name="inst_D6593293" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bean_spawner" x="152" y="768" name="inst_4447DB9E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bean_spawner" x="56" y="768" name="inst_7627C705" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bean_spawner" x="8" y="1024" name="inst_423E2F17" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bean_spawner" x="104" y="1024" name="inst_7030F30C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bean_spawner" x="200" y="1024" name="inst_B12E44A3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bean_spawner" x="296" y="1024" name="inst_3A405DE3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_parachute_spawner" x="56" y="1024" name="inst_EC33768B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_parachute_spawner" x="152" y="1024" name="inst_0BA720FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_parachute_spawner" x="248" y="1024" name="inst_E043AAEC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

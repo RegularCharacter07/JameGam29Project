@@ -48,7 +48,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr_get_controls()
+            <string>scr_get_controls();
 
 if start
 {

@@ -31,9 +31,17 @@
     audio_stop_all()
     audio_play_sound(mus_menu,1,true);
     break;
+    case rm_logo2:
+    audio_stop_all()
+    audio_play_sound(mus_menu,1,true);
+    break;
     case rm_play:
     audio_stop_all()
     audio_play_sound(mus_game,1,true);
+    break;
+    case rm_gameover:
+    audio_stop_all()
+    audio_play_sound(mus_gameover,1,true);
     break;
 }
 </string>

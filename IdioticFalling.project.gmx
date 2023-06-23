@@ -7,6 +7,7 @@
   <sounds name="sound">
     <sound>sound\mus_menu</sound>
     <sound>sound\mus_game</sound>
+    <sound>sound\mus_gameover</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="derp">
@@ -23,7 +24,9 @@
     <sprite>sprites\spr_play</sprite>
     <sprite>sprites\spr_logo</sprite>
     <sprite>sprites\spr_block</sprite>
+    <sprite>sprites\grass</sprite>
     <sprite>sprites\spr_ready</sprite>
+    <sprite>sprites\spr_gameover</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_clouds</background>
@@ -43,11 +46,18 @@
     <object>objects\obj_derp</object>
     <object>objects\obj_points</object>
     <object>objects\obj_block</object>
+    <object>objects\obj_grass</object>
     <object>objects\obj_ready</object>
+    <object>objects\obj_parachute</object>
     <object>objects\obj_bean</object>
+    <object>objects\obj_gameover</object>
+    <object>objects\obj_bean_spawner</object>
+    <object>objects\obj_parachute_spawner</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_logo</room>
+    <room>rooms\rm_logo2</room>
+    <room>rooms\rm_gameover</room>
     <room>rooms\rm_menu</room>
     <room>rooms\rm_play</room>
   </rooms>
