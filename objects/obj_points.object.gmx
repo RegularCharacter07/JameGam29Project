@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -52,6 +52,20 @@ isactive = true;
             <string>if isactive = true
 {
     points += 1;
+}
+
+if room = rm_play or rm_score
+{
+    visible = true;
+}
+else
+{
+    visible = false;
+}
+
+if room = rm_logo2
+{
+    instance_destroy();
 }
 </string>
           </argument>

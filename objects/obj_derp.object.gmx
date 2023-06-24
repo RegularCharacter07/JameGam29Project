@@ -31,6 +31,7 @@ farting = false;
 parachute = false;
 pointscollected = 300;
 fallspeeddata = 4;
+fallspeeddata2 = 4;
 </string>
           </argument>
         </arguments>
@@ -55,6 +56,7 @@ fallspeeddata = 4;
             <kind>1</kind>
             <string>parachute = false;
 sprite_index = spr_derp_fall;
+
 </string>
           </argument>
         </arguments>
@@ -105,27 +107,31 @@ sprite_index = spr_derp_fall;
 
 if farting = false
 { 
-    y += fallspeed;
-    obj_points.y += fallspeed;
+    y += fallspeeddata;
+    obj_points.y += fallspeeddata;
+    obj_pause.y += fallspeeddata;
 }
 else
 {
     if !position_meeting(x,y+fallspeed,obj_block)
     {
         sprite_index = spr_derp_fart;
-        y -= fallspeed;
-        obj_points.y -= fallspeed;
+        y -= 4;
+        obj_points.y -= 4;
+        obj_pause.y -= 4;
     }
 }
 
 if parachute = true
 {
     fallspeed = 2;
+    fallspeeddata = 2;
     sprite_index = spr_derp_parachute;
 }
 else
 {
     fallspeed = fallspeeddata;
+    fallspeeddata = fallspeeddata2;
 }
 
 if parachute = false
@@ -135,6 +141,7 @@ if parachute = false
         pointscollected += 300;
         fallspeed += 1;
         fallspeeddata += 1;
+        fallspeeddata2 += 1;
     }
 }
 
@@ -178,8 +185,12 @@ if !position_meeting(x+derpspeed,y,obj_block)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>farting = true;
-alarm[0] = 60;
+            <string>if parachute = false
+{
+    farting = true;
+    alarm[0] = 60;
+    audio_play_sound(snd_fart,2,false);
+}
 </string>
           </argument>
         </arguments>
@@ -202,8 +213,12 @@ alarm[0] = 60;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>parachute = true;
-alarm[1] = 60;
+            <string>if farting = false
+{
+    parachute = true;
+    alarm[1] = 60;
+    audio_play_sound(snd_parachute,2,false);
+}
 </string>
           </argument>
         </arguments>
@@ -227,6 +242,7 @@ alarm[1] = 60;
           <argument>
             <kind>1</kind>
             <string>room_goto(rm_gameover);
+obj_points.isactive = false;
 </string>
           </argument>
         </arguments>

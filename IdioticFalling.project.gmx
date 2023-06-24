@@ -6,8 +6,12 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\mus_menu</sound>
+    <sound>sound\mus_menu2</sound>
     <sound>sound\mus_game</sound>
     <sound>sound\mus_gameover</sound>
+    <sound>sound\snd_hit</sound>
+    <sound>sound\snd_fart</sound>
+    <sound>sound\snd_parachute</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="derp">
@@ -27,10 +31,14 @@
     <sprite>sprites\grass</sprite>
     <sprite>sprites\spr_ready</sprite>
     <sprite>sprites\spr_gameover</sprite>
+    <sprite>sprites\spr_enter</sprite>
+    <sprite>sprites\spr_howto</sprite>
+    <sprite>sprites\spr_pause</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_clouds</background>
     <background>background\bg_noclouds</background>
+    <background>background\bj_score</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -53,17 +61,28 @@
     <object>objects\obj_gameover</object>
     <object>objects\obj_bean_spawner</object>
     <object>objects\obj_parachute_spawner</object>
+    <object>objects\obj_score</object>
+    <object>objects\obj_enter</object>
+    <object>objects\obj_howto</object>
+    <object>objects\obj_pause</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_logo</room>
     <room>rooms\rm_logo2</room>
     <room>rooms\rm_gameover</room>
+    <room>rooms\rm_score</room>
     <room>rooms\rm_menu</room>
+    <room>rooms\rm_howto</room>
     <room>rooms\rm_play</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
+  <audiogroups name="audiogroups">
+    <audiogroup name="audiogroup_default"/>
+    <audiogroup name="audiogroup_music"/>
+    <audiogroup name="audiogroup_sound"/>
+  </audiogroups>
   <TutorialState>
     <IsTutorial>0</IsTutorial>
     <TutorialName></TutorialName>

@@ -78,6 +78,9 @@ if start
         case 1:
         room_goto(rm_play);
         break;
+        case 2:
+        room_goto(rm_howto);
+        break;
     }  
 }
 
