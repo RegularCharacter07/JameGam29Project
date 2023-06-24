@@ -81,6 +81,12 @@ if start
         case 2:
         room_goto(rm_howto);
         break;
+        case 3:
+        room_goto(rm_options);
+        break;
+        case 4:
+        room_goto(rm_credits);
+        break;
     }  
 }
 

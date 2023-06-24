@@ -71,7 +71,7 @@ if rightlimit = false
     }
 }
 
-if  howtoimage = 3
+if  howtoimage = 4
 {
     rightlimit = true;
 }

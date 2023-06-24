@@ -57,6 +57,7 @@ fallspeeddata2 = 4;
             <string>parachute = false;
 sprite_index = spr_derp_fall;
 
+
 </string>
           </argument>
         </arguments>
@@ -110,6 +111,7 @@ if farting = false
     y += fallspeeddata;
     obj_points.y += fallspeeddata;
     obj_pause.y += fallspeeddata;
+    obj_fallspeed.y += fallspeeddata;
 }
 else
 {
@@ -119,6 +121,7 @@ else
         y -= 4;
         obj_points.y -= 4;
         obj_pause.y -= 4;
+        obj_fallspeed.y -= 4;
     }
 }
 
@@ -134,15 +137,10 @@ else
     fallspeeddata = fallspeeddata2;
 }
 
-if parachute = false
+if obj_points.points = pointscollected
 {
-    if obj_points.points = pointscollected
-    {
-        pointscollected += 300;
-        fallspeed += 1;
-        fallspeeddata += 1;
-        fallspeeddata2 += 1;
-    }
+    fallspeeddata2 += 1;
+    pointscollected += 300;
 }
 
 
@@ -152,6 +150,7 @@ if !position_meeting(x-derpspeed,y,obj_block)
     {
         x -= derpspeed;
         obj_points.x -= derpspeed;
+        obj_fallspeed.x -= derpspeed;
     }
 }
 
@@ -161,6 +160,7 @@ if !position_meeting(x+derpspeed,y,obj_block)
     {
         x += derpspeed;
         obj_points.x += derpspeed;
+        obj_fallspeed.x += derpspeed;
     }
 }
 </string>

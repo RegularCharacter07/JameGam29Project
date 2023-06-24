@@ -34,6 +34,8 @@
     <sprite>sprites\spr_enter</sprite>
     <sprite>sprites\spr_howto</sprite>
     <sprite>sprites\spr_pause</sprite>
+    <sprite>sprites\spr_volume</sprite>
+    <sprite>sprites\spr_credits</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_clouds</background>
@@ -51,8 +53,11 @@
     <object>objects\obj_logo</object>
     <object>objects\obj_music</object>
     <object>objects\obj_menu</object>
+    <object>objects\obj_credits</object>
+    <object>objects\obj_options</object>
     <object>objects\obj_derp</object>
     <object>objects\obj_points</object>
+    <object>objects\obj_fallspeed</object>
     <object>objects\obj_block</object>
     <object>objects\obj_grass</object>
     <object>objects\obj_ready</object>
@@ -65,6 +70,8 @@
     <object>objects\obj_enter</object>
     <object>objects\obj_howto</object>
     <object>objects\obj_pause</object>
+    <object>objects\obj_soundvol</object>
+    <object>objects\obj_musicvol</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_logo</room>
@@ -72,6 +79,8 @@
     <room>rooms\rm_gameover</room>
     <room>rooms\rm_score</room>
     <room>rooms\rm_menu</room>
+    <room>rooms\rm_options</room>
+    <room>rooms\rm_credits</room>
     <room>rooms\rm_howto</room>
     <room>rooms\rm_play</room>
   </rooms>
